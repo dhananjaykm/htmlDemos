@@ -1,17 +1,28 @@
-<div id="lightningLocator">
+<html>
+  <head>
+    <title>Lout Demo </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      
+  <div id="lightningLocator">
 
-</div>
-<script>
-  $Lightning.use("c:ltngoutTestApp",    // name of the Lightning app
-        function() {                  // Callback once framework and app loaded
-            $Lightning.createComponent("c:ltngoutTest",
-                                           {}, "lightningLocator",
-                                           function(cmp) {
-                                           //callback 
-                                           });
-        },
-        'https://forcecom116-dev-ed.lightning.force.com/',  // Experience Cloud site endpoint
-        "00DB0000000KMGo!AQwAQJoK62RZ2d3NuR3SPti5ZwRYdUOdQ1dEgpZN1eolBifYZVrUCVo4ID6tSLKE8VNW1.Ci8p7Fqke84tI4s9CAlYj5korR"
-    );
-  
-</script>
+  </div>
+  <script>
+    $Lightning.use("c:ltngoutTestApp",    // name of the Lightning app
+          function() {                  // Callback once framework and app loaded
+              $Lightning.createComponent("c:ltngoutTest",
+                                             {}, "lightningLocator",
+                                             function(cmp) {
+                                             //callback 
+                                             });
+          },
+          'https://forcecom116-dev-ed.lightning.force.com/',  // Experience Cloud site endpoint
+          "00DB0000000KMGo!AQwAQJoK62RZ2d3NuR3SPti5ZwRYdUOdQ1dEgpZN1eolBifYZVrUCVo4ID6tSLKE8VNW1.Ci8p7Fqke84tI4s9CAlYj5korR" 
+      );
+
+  </script>
+  </body>
+
+<script src="https://f1dev1-dev-ed.my.salesforce.com/lightning/lightning.out.js"></script>
+</html>
