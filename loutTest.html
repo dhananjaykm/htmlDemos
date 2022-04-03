@@ -1,0 +1,17 @@
+<div id="lightningLocator">
+
+</div>
+<script>
+  $Lightning.use("c:ltngoutTestApp",    // name of the Lightning app
+        function() {                  // Callback once framework and app loaded
+            $Lightning.createComponent("c:ltngoutTest",
+                                           {}, "lightningLocator",
+                                           function(cmp) {
+                                           //callback 
+                                           });
+        },
+        'https://forcecom116-dev-ed.lightning.force.com/',  // Experience Cloud site endpoint
+        "00DB0000000KMGo!AQwAQJoK62RZ2d3NuR3SPti5ZwRYdUOdQ1dEgpZN1eolBifYZVrUCVo4ID6tSLKE8VNW1.Ci8p7Fqke84tI4s9CAlYj5korR"
+    );
+  
+</script>
